@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { messages, getMessageById } from "../messages";
+import { messages } from "../messages";
 
 export default function Inbox() {
   return (
     <div id="inboxContainer">
-      {/* <div id="inboxHeader">Inbox</div> */}
       <div id="inboxMessages">
         {Object.values(messages).length > 0
           ? messages.map((ele) => (

@@ -4,7 +4,6 @@ import db from "../firebase-config";
 import * as Yup from "yup";
 import { useRef } from "react";
 
-// const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export default function Write() {
   const textBody = useRef(null);
 
@@ -60,7 +59,6 @@ export default function Write() {
             </div>
             <div className="form-sector formBody">
               <label>Body: </label>
-              {/* <Field type="textarea" name="body" placeholder="Enter body here" className="inputField formBodyInput" /> */}
               <textarea ref={textBody} name="body" className="inputField formBodyInput" placeholder="Enter body here" onChange={(e) => setFieldValue("body", e.target.value)}></textarea>
               <ErrorMessage className="errorMsg" name="body" component="div" />
             </div>
